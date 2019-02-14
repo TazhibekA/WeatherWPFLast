@@ -1,0 +1,143 @@
+﻿<Window x:Class="WeatherWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherWPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000">
+    <Grid Background="#FF49556B" Height="419" VerticalAlignment="Top" Width="1000">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="0,46,0,0" TextWrapping="Wrap" Text="Введите город: " VerticalAlignment="Top" Grid.ColumnSpan="5" Width="211"  FontSize="20" Height="27" Foreground="#FFEEEAEA" FontFamily="Swis721 Hv BT" FontWeight="Bold"/>
+        <TextBox x:Name="city" Grid.ColumnSpan="7" Grid.Column="5" HorizontalAlignment="Left" Height="27" Margin="63,45,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="291" FontSize="20"/>
+        <Border Grid.Column="1" Grid.Row="3" CornerRadius="6"  BorderThickness="6"   >
+            <materialDesign:Card     Height="173" Background="#FF1F4371" Margin="0,0,0,-6" VerticalAlignment="Bottom" >
+
+                <StackPanel>
+                    <TextBlock x:Name="tempC" Text="" TextAlignment="Center"  Height="40" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+                    <TextBlock x:Name="temp" Text=""  TextAlignment="Center" Height="30" FontFamily="Schadow BT" FontWeight="Bold"/>
+                    <TextBlock x:Name="feel" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+                    <TextBlock x:Name="minTemp" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+        <Border Grid.Column="3" Grid.Row="3" CornerRadius="6"  BorderThickness="6"   >
+            <materialDesign:Card     Height="173" Background="#FF1F4371" Margin="0,0,0,-6" >
+
+                <StackPanel>
+                    <TextBlock x:Name="tempC1" Text="" TextAlignment="Center" Height="40" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+                    <TextBlock x:Name="temp1" Text="" TextAlignment="Center" Height="30" FontFamily="Schadow BT" FontWeight="Bold"/>
+                    <TextBlock x:Name="feel1" Text="" TextAlignment="Center" Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+                    <TextBlock x:Name="minTemp1" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+
+
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+
+        <Border Grid.Column="5" Grid.Row="3" CornerRadius="6"  BorderThickness="6"   >
+            <materialDesign:Card     Height="173" Background="#FF1F4371" Margin="0,0,0,-6" >
+
+                <StackPanel>
+                    <TextBlock x:Name="tempC2" Text="" TextAlignment="Center" Height="40" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+                    <TextBlock x:Name="temp2" Text="" TextAlignment="Center" Height="30" FontFamily="Schadow BT" FontWeight="Bold"/>
+                    <TextBlock x:Name="feel2" Text="" TextAlignment="Center" Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+                    <TextBlock x:Name="minTemp2" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+
+
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+
+        <Border Grid.Column="7" Grid.Row="3" CornerRadius="6"  BorderThickness="6"   >
+            <materialDesign:Card     Height="173" Background="#FF1F4371" Margin="0,0,0,-6" >
+
+                <StackPanel>
+                    <TextBlock x:Name="tempC3" Text="" TextAlignment="Center" Height="40" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+                    <TextBlock x:Name="temp3" Text="" TextAlignment="Center" Height="30" FontFamily="Schadow BT" FontWeight="Bold"/>
+                    <TextBlock x:Name="feel3" Text="" TextAlignment="Center" Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+                    <TextBlock x:Name="minTemp3" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+
+
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+
+        <Border Grid.Column="9" Grid.Row="3" CornerRadius="6"  BorderThickness="6"   >
+            <materialDesign:Card     Height="173" Background="#FF1F4371" Margin="0,0,0,-6" >
+
+                <StackPanel>
+                    <TextBlock x:Name="tempC4" Text="" TextAlignment="Center" Height="40" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+                    <TextBlock x:Name="temp4" Text="" TextAlignment="Center" Height="30" FontFamily="Schadow BT" FontWeight="Bold"/>
+                    <TextBlock x:Name="feel4" Text="" TextAlignment="Center" Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+                    <TextBlock x:Name="minTemp4" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+
+
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+
+        <Border Grid.Column="11" Grid.Row="3" CornerRadius="6"  BorderThickness="6"   >
+            <materialDesign:Card     Height="173" Background="#FF1F4371" Margin="0,0,0,-6" >
+
+                <StackPanel>
+                    <TextBlock x:Name="tempC5" Text="" TextAlignment="Center" Height="40" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+                    <TextBlock x:Name="temp5" Text="" TextAlignment="Center" Height="30" FontFamily="Schadow BT" FontWeight="Bold"/>
+                    <TextBlock x:Name="feel5" Text="" TextAlignment="Center" Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+                    <TextBlock x:Name="minTemp5" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+
+
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+
+        <Border Grid.Column="13" Grid.Row="3" CornerRadius="6"  BorderThickness="6"   >
+            <materialDesign:Card     Height="173" Background="#FF1F4371" Margin="0,0,0,-6" >
+
+                <StackPanel>
+                    <TextBlock x:Name="tempC6" Text="" TextAlignment="Center" Height="40" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="20"/>
+                    <TextBlock x:Name="temp6" Text="" TextAlignment="Center" Height="30" FontFamily="Schadow BT" FontWeight="Bold"/>
+                    <TextBlock x:Name="feel6" Text="" TextAlignment="Center" Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="10" Foreground="#FFB29B9B"/>
+                    <TextBlock x:Name="minTemp6" Text="" TextAlignment="Center"  Height="50" FontFamily="Schadow BT" FontWeight="Bold" FontSize="11" Foreground="#FFB29B9B"/>
+
+
+
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+        <Button Content="Показать погоду" Grid.Column="11" HorizontalAlignment="Left" Margin="77,42,0,1" Width="124" Grid.ColumnSpan="3" FontSize="11" Click="Button_Click" Background="#FFB2BAC5" Foreground="#FF534242" FontFamily="Segoe UI Black"/>
+
+
+    </Grid>
+</Window>
